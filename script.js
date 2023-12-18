@@ -1,5 +1,5 @@
 function load_youtube() {
-    window.open("https://www.youtube.com/channel/UCag7cztDCgGUYX0Vu6tuu6Am")
+    window.open("https://www.youtube.com/@Ihat3my1if3")
 }
 function load_github() {
     window.open("https://github.com/0x1F608")
