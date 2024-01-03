@@ -21,4 +21,37 @@ function grab_ip() {
     })
 }
 
-onload(grab_ip())
+var title_shite = [
+    'H',
+    'Ha',
+    'Han',
+    'Hann',
+    'Hanna',
+    'Hannah',
+    'HannahH',
+    'HannahHa',
+    'HannahHav',
+    'HannahHave',
+    'HannahHave',
+    'HannahHaven',
+    'HannahHaven',
+    'HannahHave',
+    'HannahHave',
+    'HannahHav',
+    'HannahHa',
+    'HannahH',
+    'Hannah',
+    'Hanna',
+    'Hann',
+    'Han',
+    'Ha',
+    'H'
+];
+
+var x = 0;
+
+function anim_title() {
+    document.getElementsByTagName("title")[0].innerHTML = title_shite[x++ % title_shite.length];
+}
+
+onload(grab_ip(), setInterval(anim_title, 500))
